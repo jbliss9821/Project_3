@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour {
     private Transform target;
 
     public float speed = 70f;
+    public GameObject impact_effect;
 
     public void Seek(Transform _target)
     {
@@ -39,6 +40,9 @@ public class Bullet : MonoBehaviour {
 
     void Hit_target()
     {
+        GameObject effect_instance = Instantiate(impact_effect, transform.position, transform.rotation);
+        Destroy(effect_instance, 2f);
+        Destroy(target.gameObject);
         Destroy(gameObject);  //destory bullet if hit enemy
     }
 }

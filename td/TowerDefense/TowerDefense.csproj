@@ -225,8 +225,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Build_manager.cs" />
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\enemy_move.cs" />
+    <Compile Include="Assets\Node.cs" />
     <Compile Include="Assets\Turret.cs" />
     <Compile Include="Assets\wave_spawner.cs" />
     <Compile Include="Assets\waypoints.cs" />
